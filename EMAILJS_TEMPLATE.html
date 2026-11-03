@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nova porudžbina - Vermilion Claws</title>
+</head>
+<body style="margin:0;background:#050505;padding:24px 12px;color:#f2f2f2;font-family:Georgia,'Times New Roman',serif;">
+  <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="border-collapse:collapse;">
+    <tr>
+      <td align="center">
+        <table role="presentation" width="600" cellspacing="0" cellpadding="0" style="width:100%;max-width:600px;border:1px solid #321018;background:#090909;border-collapse:collapse;">
+          <tr>
+            <td style="padding:22px 28px;text-align:center;border-bottom:1px solid #321018;">
+              <div style="font-size:30px;font-weight:bold;letter-spacing:3px;color:#f2f2f2;">VERMILION <span style="color:#bf1932;">CLAWS</span></div>
+              <div style="margin-top:5px;color:#aaa;font-style:italic;">Luxury Press On Nails</div>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:26px 30px;text-align:center;">
+              <h1 style="margin:0 0 16px;font-size:21px;font-weight:normal;color:#f2f2f2;">Nova porudžbina je primljena</h1>
+              <p style="margin:8px 0;color:#ddd;">Broj porudžbine: <strong style="color:#bf1932;">{{broj_porudzbine}}</strong></p>
+              <p style="margin:8px 0;color:#ddd;">Kupac: <strong>{{ime_kupca}}</strong></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:0 28px 28px;">
+              <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="border-collapse:collapse;background:#111;border-left:2px solid #bf1932;">
+                <tr>
+                  <td style="padding:20px 22px;color:#ddd;font-size:14px;line-height:1.7;">
+                    <h2 style="margin:0 0 14px;color:#fff;font-size:14px;letter-spacing:1px;">DETALJI PORUDŽBINE</h2>
+                    <div>{{{detalji_korpe_html}}}</div>
+                    <div style="margin:18px 0;border-top:1px dashed #444;"></div>
+                    <p style="margin:7px 0;"><strong>Ime:</strong> {{ime_kupca}}</p>
+                    <p style="margin:7px 0;"><strong>Telefon:</strong> {{telefon}}</p>
+                    <p style="margin:7px 0;"><strong>Adresa:</strong> {{adresa}}, {{grad}} {{postanski_broj}}</p>
+                    <p style="margin:7px 0;"><strong>Način plaćanja:</strong> {{nacin_placanja}}</p>
+                    <p style="margin:7px 0;"><strong>Ukupno artikala:</strong> {{ukupno_artikala}}</p>
+                    <p style="margin:7px 0;"><strong>Dostava:</strong> {{dostava}}</p>
+                    <p style="margin:14px 0 0;color:#bf1932;font-size:18px;font-weight:bold;">UKUPNO: {{ukupna_cena}}</p>
+                    <p style="margin:12px 0 0;color:#aaa;"><strong>Napomena:</strong> {{napomena}}</p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

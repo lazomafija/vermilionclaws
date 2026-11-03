@@ -1,0 +1,1373 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>Vermilion Claws — Luksuzni Press-On Nokti | Ručna Izrada | Srbija</title>
+  <meta name="description" content="Vermilion Claws nudi ekskluzivne gotske luksuzne press-on nokte ručne izrade u Srbiji. Stiletto, kovčeg, badem oblici sa unikatnim gotskim dekorom, kristalima i tečnim hromom. Nosi umetnost na vrhovima prstiju." />
+  <meta name="keywords" content="press on nokti, luksuzni nokti, gotski nokti, press on nails, nail clips, nail art srbija, gotski dizajn, vermilion claws, nokti ručna izrada" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Vermilion Claws — Gotski Luksuzni Press-On Nokti" />
+  <meta property="og:description" content="Svaki set je ručno oslikan remek-delo. Gotska elegancija, krvava estetika, demonski detalji — dostupno u Srbiji." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="sr_RS" />
+
+  <!-- Preconnect for fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Favicon (SVG sword) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23BF1932' d='M12 2L13.5 8L15 9.5L13.5 11L12 17L10.5 11L9 9.5L10.5 8L12 2Z'/%3E%3C/svg%3E" />
+
+  <!-- ══ HIGGSFIELD CINEMATIC LOADER (AWWWARDS AWARD-WINNING INTRO) ══ -->
+  <style>
+    @font-face {
+      font-family: 'BeakedTyrant';
+      src: url('/fonts/BeakedTyrant.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    /* Master Container */
+    #vc-loader {
+      position: fixed;
+      inset: 0;
+      z-index: 99999;
+      background: #020204;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      user-select: none;
+    }
+    #vc-loader.done {
+      display: none !important;
+      pointer-events: none !important;
+    }
+
+    /* Theatrical Shutters for Higgsfield Split Reveal */
+    .loader-shutter {
+      position: absolute;
+      left: 0;
+      right: 0;
+      height: 50.2%;
+      background: #020204;
+      z-index: 10;
+      transition: transform 0.85s cubic-bezier(0.86, 0, 0.07, 1);
+      will-change: transform;
+    }
+    .shutter-top {
+      top: 0;
+      border-bottom: 1px solid rgba(191, 25, 50, 0.4);
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.95);
+    }
+    .shutter-bottom {
+      bottom: 0;
+      border-top: 1px solid rgba(191, 25, 50, 0.4);
+      box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.95);
+    }
+    #vc-loader.revealing .shutter-top {
+      transform: translateY(-100%);
+    }
+    #vc-loader.revealing .shutter-bottom {
+      transform: translateY(100%);
+    }
+
+    /* Atmospheric Backdrop */
+    .loader-backdrop {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      pointer-events: none;
+      overflow: hidden;
+    }
+    .loader-ambient-glow {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: min(650px, 90vw);
+      height: min(650px, 90vw);
+      transform: translate(-50%, -50%);
+      background: radial-gradient(circle, rgba(191, 25, 50, 0.22) 0%, rgba(120, 15, 30, 0.08) 45%, transparent 70%);
+      filter: blur(50px);
+      animation: loader-glow-pulse 3.5s ease-in-out infinite alternate;
+    }
+    .loader-grid-lines {
+      position: absolute;
+      inset: 0;
+      background-size: 60px 60px;
+      background-image: 
+        linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+      opacity: 0.7;
+    }
+    .loader-grain-layer {
+      position: absolute;
+      inset: 0;
+      opacity: 0.035;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+    }
+
+    /* Higgsfield HUD Telemetry Corners */
+    .loader-hud-corner {
+      position: absolute;
+      z-index: 15;
+      font-family: 'Cinzel', -apple-system, sans-serif;
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+      pointer-events: none;
+      transition: opacity 0.5s ease;
+    }
+    #vc-loader.revealing .loader-hud-corner {
+      opacity: 0;
+    }
+    .hud-corner-tl { top: 2rem; left: 2.5rem; }
+    .hud-corner-tr { top: 2rem; right: 2.5rem; text-align: right; }
+    .hud-corner-bl { bottom: 2rem; left: 2.5rem; }
+    .hud-corner-br { bottom: 2rem; right: 2.5rem; text-align: right; }
+
+    .hud-mono {
+      font-size: 0.65rem;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      color: rgba(220, 224, 240, 0.85);
+      font-weight: 600;
+    }
+    .hud-sub {
+      font-size: 0.52rem;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: #bf1932;
+    }
+    .hud-audio-meter {
+      display: flex;
+      align-items: flex-end;
+      gap: 3px;
+      height: 12px;
+      margin-bottom: 2px;
+    }
+    .hud-audio-meter span {
+      width: 2px;
+      background: #bf1932;
+      border-radius: 1px;
+      animation: audio-bar 1.2s ease-in-out infinite alternate;
+    }
+    .hud-audio-meter span:nth-child(1) { height: 40%; animation-delay: 0.1s; }
+    .hud-audio-meter span:nth-child(2) { height: 90%; animation-delay: 0.3s; }
+    .hud-audio-meter span:nth-child(3) { height: 60%; animation-delay: 0.15s; }
+    .hud-audio-meter span:nth-child(4) { height: 100%; animation-delay: 0.4s; }
+    .hud-audio-meter span:nth-child(5) { height: 50%; animation-delay: 0.25s; }
+
+    /* Central Stage */
+    .loader-center-stage {
+      position: relative;
+      z-index: 15;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1), opacity 0.5s ease, filter 0.5s ease;
+    }
+    #vc-loader.revealing .loader-center-stage {
+      transform: scale(1.1);
+      opacity: 0;
+      filter: blur(10px);
+    }
+
+    /* Sacred Orbital Rings */
+    .loader-rings-wrap {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 320px;
+      height: 320px;
+      transform: translate(-50%, -58%);
+      pointer-events: none;
+    }
+    .loader-ring {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .ring-outer {
+      animation: ring-rotate-cw 24s linear infinite;
+    }
+    .ring-inner {
+      animation: ring-rotate-ccw 16s linear infinite;
+    }
+
+    /* Central Blade Silhouette */
+    .loader-blade-wrap {
+      position: relative;
+      width: 68px;
+      height: 190px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+    }
+    .loader-sword-svg {
+      width: 100%;
+      height: 100%;
+      filter: drop-shadow(0 0 16px rgba(191, 25, 50, 0.5));
+      animation: blade-float 3s ease-in-out infinite;
+    }
+    .blade-sheen-shine {
+      animation: sheen-sweep-anim 2.5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    }
+    .loader-blade-pulse {
+      position: absolute;
+      top: 35%;
+      left: 50%;
+      width: 18px;
+      height: 18px;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      background: rgba(255, 34, 68, 0.85);
+      box-shadow: 0 0 25px #ff2244, 0 0 50px #bf1932;
+      animation: energy-pulse 2s ease-in-out infinite;
+    }
+
+    /* Brand Typography */
+    .loader-brand-group {
+      margin-bottom: 2rem;
+    }
+    .loader-brand-title {
+      font-family: 'BeakedTyrant', 'Pinyon Script', cursive, serif;
+      font-size: clamp(2.2rem, 5vw, 3.4rem);
+      font-weight: normal;
+      color: #f8f9fc;
+      margin: 0 0 0.4rem 0;
+      line-height: 1;
+      letter-spacing: 0.02em;
+      text-shadow: 0 0 15px rgba(255, 255, 255, 0.3), 0 0 35px rgba(191, 25, 50, 0.4);
+    }
+    .loader-brand-subtitle {
+      font-family: 'Cinzel', serif;
+      font-size: 0.6rem;
+      letter-spacing: 0.38em;
+      text-transform: uppercase;
+      color: #bf1932;
+      margin: 0;
+      font-weight: 600;
+    }
+
+    /* Counter & Telemetry */
+    .loader-metrics {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.85rem;
+      width: min(320px, 85vw);
+    }
+    .loader-counter-wrap {
+      display: flex;
+      align-items: baseline;
+      gap: 2px;
+      font-family: 'Cinzel', monospace, serif;
+    }
+    .loader-counter {
+      font-size: 2.6rem;
+      font-weight: 700;
+      color: #ffffff;
+      line-height: 1;
+      letter-spacing: -0.02em;
+      font-variant-numeric: tabular-nums;
+      text-shadow: 0 0 20px rgba(191, 25, 50, 0.5);
+    }
+    .loader-percent-symbol {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #bf1932;
+    }
+
+    /* Precision Track & Laser Spark */
+    .loader-track {
+      position: relative;
+      width: 100%;
+      height: 2px;
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 1px;
+      overflow: visible;
+    }
+    .loader-track-fill {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, #6b0e1e, #bf1932, #ff4d6d);
+      box-shadow: 0 0 12px rgba(191, 25, 50, 0.8);
+      transition: width 0.08s linear;
+    }
+    .loader-spark {
+      position: absolute;
+      top: 50%;
+      left: 0%;
+      width: 6px;
+      height: 6px;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      background: #ffffff;
+      box-shadow: 0 0 10px #ffffff, 0 0 18px #ff4d6d;
+      transition: left 0.08s linear;
+    }
+
+    /* Dynamic Telemetry Status Log */
+    .loader-status-feed {
+      font-family: 'Cinzel', monospace, sans-serif;
+      font-size: 0.58rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: rgba(220, 224, 240, 0.6);
+      height: 1.2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: color 0.3s ease;
+    }
+
+    /* Keyframes */
+    @keyframes loader-glow-pulse {
+      0% { opacity: 0.6; transform: translate(-50%, -50%) scale(0.92); }
+      100% { opacity: 1; transform: translate(-50%, -50%) scale(1.08); }
+    }
+    @keyframes ring-rotate-cw {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    @keyframes ring-rotate-ccw {
+      from { transform: rotate(360deg); }
+      to { transform: rotate(0deg); }
+    }
+    @keyframes blade-float {
+      0%, 100% { transform: translateY(0) rotate(-1.5deg); }
+      50% { transform: translateY(-8px) rotate(1.5deg); }
+    }
+    @keyframes sheen-sweep-anim {
+      0% { opacity: 0; transform: translateY(-60px); }
+      20% { opacity: 1; }
+      50% { opacity: 1; transform: translateY(60px); }
+      65%, 100% { opacity: 0; transform: translateY(60px); }
+    }
+    @keyframes energy-pulse {
+      0%, 100% { transform: translate(-50%, -50%) scale(1); opacity: 0.85; }
+      50% { transform: translate(-50%, -50%) scale(1.4); opacity: 0.4; }
+    }
+    @keyframes audio-bar {
+      0% { transform: scaleY(0.3); }
+      100% { transform: scaleY(1); }
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hud-corner-tl, .hud-corner-tr { top: 1.25rem; }
+      .hud-corner-bl, .hud-corner-br { bottom: 1.25rem; }
+      .hud-corner-tl, .hud-corner-bl { left: 1.25rem; }
+      .hud-corner-tr, .hud-corner-br { right: 1.25rem; }
+      .loader-rings-wrap { width: 260px; height: 260px; }
+      .loader-blade-wrap { height: 160px; }
+      .loader-brand-title { font-size: 2.2rem; }
+    }
+  </style>
+
+  <script type="module" src="/src/main.js"></script>
+</head>
+<body>
+
+  <!-- ══ HIGGSFIELD CINEMATIC LOADER SCREEN ═══════════════════ -->
+  <div id="vc-loader" role="status" aria-label="Učitavanje Vermilion Claws">
+    <!-- Theatrical Shutters for Split Curtain Exit -->
+    <div class="loader-shutter shutter-top"></div>
+    <div class="loader-shutter shutter-bottom"></div>
+
+    <!-- Atmospheric Backdrop -->
+    <div class="loader-backdrop">
+      <div class="loader-ambient-glow" aria-hidden="true"></div>
+      <div class="loader-grid-lines" aria-hidden="true"></div>
+      <div class="loader-grain-layer" aria-hidden="true"></div>
+    </div>
+
+    <!-- HUD Telemetry Corners -->
+    <div class="loader-hud-corner hud-corner-tl">
+      <span class="hud-mono">VC // SYS.2026</span>
+      <span class="hud-sub">ATELJE VERMILION CLAWS</span>
+    </div>
+    <div class="loader-hud-corner hud-corner-tr">
+      <span class="hud-mono">LAT: 44.8176° N · LONG: 20.4633° E</span>
+      <span class="hud-sub">BEOGRAD · SRBIJA</span>
+    </div>
+    <div class="loader-hud-corner hud-corner-bl">
+      <div class="hud-audio-meter">
+        <span></span><span></span><span></span><span></span><span></span>
+      </div>
+      <span class="hud-sub">AUDIO PROTOKOL AKTIVAN</span>
+    </div>
+    <div class="loader-hud-corner hud-corner-br">
+      <span class="hud-mono">RELEASE: MMXVI.LUX</span>
+      <span class="hud-sub">RUČNA IZRADA</span>
+    </div>
+
+    <!-- Central Stage -->
+    <div class="loader-center-stage">
+      <!-- Sacred Orbital Rings -->
+      <div class="loader-rings-wrap" aria-hidden="true">
+        <svg class="loader-ring ring-outer" viewBox="0 0 320 320">
+          <circle cx="160" cy="160" r="150" stroke="rgba(191, 25, 50, 0.25)" stroke-width="1" stroke-dasharray="4 8" fill="none" />
+          <circle cx="160" cy="160" r="142" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" stroke-dasharray="1 14" fill="none" />
+        </svg>
+        <svg class="loader-ring ring-inner" viewBox="0 0 240 240">
+          <circle cx="120" cy="120" r="110" stroke="rgba(191, 25, 50, 0.4)" stroke-width="1.2" stroke-dasharray="35 70" fill="none" />
+          <circle cx="120" cy="120" r="95" stroke="rgba(255, 255, 255, 0.1)" stroke-width="1" fill="none" />
+        </svg>
+      </div>
+
+      <!-- Ceremonial Blade Silhouette with Sheen -->
+      <div class="loader-blade-wrap">
+        <svg class="loader-sword-svg" viewBox="0 0 80 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <filter id="loader-glow" x="-20%" y="-20%" width="140%" height="140%">
+              <feGaussianBlur stdDeviation="6" result="blur" />
+              <feComposite in="SourceGraphic" in2="blur" operator="over" />
+            </filter>
+            <linearGradient id="blade-metal" x1="40" y1="0" x2="40" y2="200" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#ffffff" />
+              <stop offset="25%" stop-color="#e0e4ec" />
+              <stop offset="60%" stop-color="#8a92a5" />
+              <stop offset="100%" stop-color="#2d1217" />
+            </linearGradient>
+            <linearGradient id="blade-crimson-core" x1="40" y1="20" x2="40" y2="180" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#ff3355" stop-opacity="0.9" />
+              <stop offset="50%" stop-color="#bf1932" stop-opacity="0.7" />
+              <stop offset="100%" stop-color="#400810" stop-opacity="0" />
+            </linearGradient>
+            <linearGradient id="sheen-sweep" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="transparent" />
+              <stop offset="45%" stop-color="rgba(255,255,255,0.85)" />
+              <stop offset="55%" stop-color="rgba(255,100,120,0.9)" />
+              <stop offset="100%" stop-color="transparent" />
+            </linearGradient>
+          </defs>
+
+          <!-- Outer aura -->
+          <polygon points="40,6 46,160 40,178 34,160" fill="url(#blade-crimson-core)" filter="url(#loader-glow)" opacity="0.8" />
+          
+          <!-- Blade body -->
+          <polygon points="40,8 45,158 40,175 35,158" fill="url(#blade-metal)" />
+          
+          <!-- Blood fuller channel (central groove) -->
+          <line x1="40" y1="24" x2="40" y2="148" stroke="#ff2244" stroke-width="1.8" stroke-linecap="round" />
+          
+          <!-- Crossguard / Hilt -->
+          <rect x="14" y="156" width="52" height="7" rx="3.5" fill="#181a20" stroke="#bf1932" stroke-width="1" />
+          <circle cx="40" cy="159.5" r="3" fill="#ff2244" />
+          
+          <!-- Grip -->
+          <rect x="36" y="163" width="8" height="34" rx="3" fill="#0d0e12" stroke="rgba(191,25,50,0.4)" stroke-width="1" />
+          
+          <!-- Pommel -->
+          <circle cx="40" cy="204" r="7" fill="#181a20" stroke="#bf1932" stroke-width="1.5" />
+          <circle cx="40" cy="204" r="3" fill="#ff2244" />
+
+          <!-- Dynamic Blade Sheen Layer -->
+          <polygon class="blade-sheen-shine" points="40,8 45,158 40,175 35,158" fill="url(#sheen-sweep)" opacity="0" />
+        </svg>
+
+        <!-- Pulsing Energy Core -->
+        <div class="loader-blade-pulse" aria-hidden="true"></div>
+      </div>
+
+      <!-- Typography Brand Mark -->
+      <div class="loader-brand-group">
+        <h2 class="loader-brand-title">Vermilion Claws</h2>
+        <p class="loader-brand-subtitle">LUKSUZ MRAČNE ESTETIKE · ATELJE</p>
+      </div>
+
+      <!-- Metric Counter & Progress HUD -->
+      <div class="loader-metrics">
+        <div class="loader-counter-wrap">
+          <span class="loader-counter" id="loader-percent">000</span>
+          <span class="loader-percent-symbol">%</span>
+        </div>
+
+        <!-- Precision Line Track -->
+        <div class="loader-track">
+          <div class="loader-track-fill" id="loader-bar-fill"></div>
+          <div class="loader-spark" id="loader-spark"></div>
+        </div>
+
+        <!-- Dynamic Status Telemetry -->
+        <div class="loader-status-feed" id="loader-status">
+          INICIJALIZACIJA PROTOKOLA...
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Higgsfield Loader Script (Runs immediately on boot) -->
+  <script>
+    (function() {
+      var loaderEl = document.getElementById('vc-loader');
+      var percentEl = document.getElementById('loader-percent');
+      var fillEl = document.getElementById('loader-bar-fill');
+      var sparkEl = document.getElementById('loader-spark');
+      var statusEl = document.getElementById('loader-status');
+
+      if (!loaderEl) return;
+
+      var current = 0;
+      var target = 100;
+      var hasRevealed = false;
+
+      var statusMessages = [
+        { at: 0, text: '[01/03] KALIBRACIJA ATELJEA & SVETLA...' },
+        { at: 28, text: '[02/03] KOVANJE CEREMONIJALNOG SEČIVA...' },
+        { at: 62, text: '[03/03] BUĐENJE 3D RELIKVIJE...' },
+        { at: 88, text: '[FINAL] ZAPEČAĆIVANJE PAKTA...' },
+        { at: 100, text: '✦ DOBRODOŠLI U VERMILION CLAWS ✦' }
+      ];
+
+      function updateStatus(val) {
+        if (!statusEl) return;
+        for (var i = statusMessages.length - 1; i >= 0; i--) {
+          if (val >= statusMessages[i].at) {
+            statusEl.textContent = statusMessages[i].text;
+            break;
+          }
+        }
+      }
+
+      function revealScene() {
+        if (hasRevealed) return;
+        hasRevealed = true;
+
+        if (loaderEl) {
+          loaderEl.classList.add('revealing');
+          setTimeout(function() {
+            loaderEl.classList.add('done');
+            window.dispatchEvent(new CustomEvent('loader:revealed'));
+          }, 850);
+        }
+      }
+
+      // Check if user prefers reduced motion
+      var prefersReduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (prefersReduced) {
+        setTimeout(revealScene, 300);
+        return;
+      }
+
+      // Smooth realistic progress progression
+      var start = performance.now();
+      var duration = 1800; // 1.8s award-winning cinematic duration
+
+      function tick(now) {
+        var elapsed = now - start;
+        var p = Math.min(1, elapsed / duration);
+        // Easing: fast rise, micro-tension pause around 75%, then final surge to 100%
+        var eased = p < 0.7 
+          ? Math.pow(p / 0.7, 1.3) * 0.75 
+          : 0.75 + Math.pow((p - 0.7) / 0.3, 0.8) * 0.25;
+
+        var val = Math.min(100, Math.floor(eased * 100));
+        
+        if (percentEl) {
+          percentEl.textContent = val < 10 ? '00' + val : (val < 100 ? '0' + val : '100');
+        }
+        if (fillEl) fillEl.style.width = val + '%';
+        if (sparkEl) sparkEl.style.left = val + '%';
+        updateStatus(val);
+
+        if (p < 1) {
+          requestAnimationFrame(tick);
+        } else {
+          // Finished!
+          if (percentEl) percentEl.textContent = '100';
+          if (fillEl) fillEl.style.width = '100%';
+          if (sparkEl) sparkEl.style.left = '100%';
+          updateStatus(100);
+
+          setTimeout(revealScene, 350);
+        }
+      }
+
+      requestAnimationFrame(tick);
+    })();
+  </script>
+
+  <!-- Film grain overlay -->
+  <div class="grain-overlay" aria-hidden="true"></div>
+
+  <!-- Personal contact rail -->
+  <aside class="personal-contact" aria-label="Lični kontakt">
+    <button class="personal-contact-toggle" id="personal-contact-toggle" type="button" aria-expanded="false" aria-controls="personal-contact-panel">
+      <span class="personal-contact-toggle-mark" aria-hidden="true">✦</span>
+      <span>Lični kontakt</span>
+    </button>
+    <div class="personal-contact-panel" id="personal-contact-panel" aria-hidden="true">
+      <div class="personal-contact-panel-head">
+        <div>
+          <span class="personal-contact-kicker">Direktna linija</span>
+          <h2>Pišite mi lično</h2>
+        </div>
+        <button class="personal-contact-close" id="personal-contact-close" type="button" aria-label="Zatvori kontakt panel">×</button>
+      </div>
+      <p>Ukoliko želite lični kontakt, pišite ili pozovite. Odgovaram čim budem mogla.</p>
+      <div class="personal-contact-links">
+        <a class="personal-contact-link whatsapp-link" href="https://wa.me/381638043349" target="_blank" rel="noopener noreferrer" aria-label="Otvori WhatsApp kontakt">
+          <span class="personal-contact-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M20.5 11.5a8.5 8.5 0 0 1-12.6 7.4L3.5 20.5l1.7-4.1A8.5 8.5 0 1 1 20.5 11.5Z"/><path d="M8.2 8.4c.2 2.5 2.9 5.2 5.4 5.4l1.2-1.2c.2-.2.5-.2.8-.1l1.4.7c.3.1.4.4.3.7-.2.8-.9 1.4-1.7 1.4-3.9-.2-7.3-3.6-7.5-7.5 0-.8.6-1.5 1.4-1.7.3-.1.6 0 .7.3l.7 1.4c.1.3.1.6-.1.8Z"/></svg>
+          </span>
+          <span><strong>WhatsApp</strong><small>Pošaljite poruku</small></span>
+          <span class="personal-contact-arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="personal-contact-link viber-link" href="viber://chat?number=%2B381638043349" aria-label="Otvori Viber kontakt">
+          <span class="personal-contact-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M18.7 4.2C15.6 1.8 8.4 1.8 5.3 4.2 2.4 6.5 2.5 12.4 3.5 15.2c.4 1.1 1.6 1.9 2.7 2.3l-.5 3 3.1-1.8c2.8.4 6.2.3 9.2-1.3 3.5-1.9 4.1-9.9.7-13.2Z"/><path d="M8.3 7.4c.3 3.2 2.1 5.1 5.3 5.4"/><path d="m14.1 8.1 1.1 1.2-1.1 1.1"/></svg>
+          </span>
+          <span><strong>Viber</strong><small>Pozovite ili pišite</small></span>
+          <span class="personal-contact-arrow" aria-hidden="true">↗</span>
+        </a>
+      </div>
+      <a class="personal-contact-phone" href="tel:+381638043349"><span>Telefon</span><strong>+381 63 8043349</strong></a>
+    </div>
+  </aside>
+
+  <!-- ═══════════════════════════════════════════
+       NAVIGATION
+  ═══════════════════════════════════════════ -->
+  <nav class="site-nav" role="navigation" aria-label="Glavna navigacija">
+    <div class="nav-inner">
+
+      <!-- Left Links -->
+      <ul class="nav-links" id="main-nav-links">
+        <li><a href="#kolekcije">Kolekcije</a></li>
+        <li><a href="#set-po-meri">Set po Meri</a></li>
+        <li><a href="#ritual">Ritual Primene</a></li>
+        <li><a href="#recenzije">Recenzije</a></li>
+      </ul>
+
+      <!-- Mobile Toggle -->
+      <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Otvori meni" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- Logo Center: Transparent Script Logo (Zero Background) -->
+      <a href="#" class="nav-logo" aria-label="Vermilion Claws — Početna">
+        <img src="/assets/logo_text_transparent.png" alt="Vermilion Claws" class="nav-brand-logo" />
+      </a>
+
+      <!-- Right Actions -->
+      <div class="nav-actions">
+        <button class="sound-btn" id="sound-toggle-btn" aria-label="Uključi/isključi zvuk">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02z"/>
+          </svg>
+          <span class="sound-label">ZVUK</span>
+        </button>
+
+        <button class="nav-icon-btn" id="nav-cart-btn" aria-label="Otvori korpu" id="nav-cart-btn">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="nav-cart-badge" id="nav-cart-count">0</span>
+        </button>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- Mobile Nav Dropdown -->
+  <div id="mobile-nav" style="display:none" aria-hidden="true">
+    <ul>
+      <li><a href="#kolekcije">Kolekcije</a></li>
+      <li><a href="#set-po-meri">Set po Meri</a></li>
+      <li><a href="#ritual">Ritual Primene</a></li>
+      <li><a href="#recenzije">Recenzije</a></li>
+    </ul>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       HERO SECTION
+  ═══════════════════════════════════════════ -->
+  <section class="hero-section" aria-label="Hero — Vermilion Claws">
+
+    <!-- Background FX -->
+    <div class="hero-bg-gradient" aria-hidden="true"></div>
+    <div class="hero-particle-grid" aria-hidden="true"></div>
+
+    <!-- Content Column -->
+    <div class="hero-content-col">
+
+      <div class="hero-eyebrow fade-up">
+        <div class="hero-eyebrow-line"></div>
+        <span class="hero-eyebrow-text">Luksuzna Umetnost Noktiju · Ručna Izrada · Srbija</span>
+      </div>
+
+      <h1 class="hero-title">
+        <span class="title-line">VERMILION</span>
+        <span class="title-line crimson">CLAWS</span>
+      </h1>
+
+      <p class="hero-subtitle-script fade-up delay-2">Luxury Press-On Nails</p>
+
+      <p class="hero-description fade-up delay-3">
+        Svaki set je ručno oslikan minijaturni umetnički prizor. 
+        Gotska elegancija, krvava estetika i demonska preciznost — 
+        na vrhovima tvojih prstiju.
+      </p>
+
+      <div class="hero-actions fade-up delay-4">
+        <a href="#kolekcije" class="btn-primary">
+          <span>Istraži Kolekcije</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </a>
+        <a href="#set-po-meri" class="btn-ghost">Set po Meri</a>
+      </div>
+
+      <!-- Stats -->
+      <div class="hero-stats fade-up delay-5">
+        <div class="stat-item">
+          <span class="stat-value" data-target="100" data-suffix="%">0%</span>
+          <span class="stat-label">Ručna Izrada</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-value" data-target="4" data-suffix=" nedelje">0 nedelje</span>
+          <span class="stat-label">Trajnost Nošenja</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-value" data-target="200" data-suffix="+">0+</span>
+          <span class="stat-label">Zadovoljnih Klijentica</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- 3D Sword Column -->
+    <div class="hero-3d-col" aria-hidden="true">
+      <div id="hero-3d-container">
+
+        <!-- Loading state -->
+        <div class="sword-loader" id="sword-loader">
+          <div class="loader-ornament">✦</div>
+          <div class="loader-bar-track">
+            <div class="loader-bar-fill" id="sword-loader-bar"></div>
+          </div>
+          <span class="loader-text">Prizivanje Sečiva...</span>
+        </div>
+
+        <!-- Glow hint after animation -->
+        <div class="glow-hint" id="glow-hint">
+          ✦ Klikni da ponovo aktiviraš sjaj ✦
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Rotating badge ring -->
+    <div class="hero-badge-ring" aria-hidden="true">
+      <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path id="badge-text-path" d="M 50,50 m -37,0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" fill="none"/>
+        <text font-family="Cinzel, serif" font-size="8.5" fill="rgba(191,25,50,0.7)" letter-spacing="4">
+          <textPath href="#badge-text-path">VERMILION CLAWS · SRBIJA · LUXURY ·</textPath>
+        </text>
+      </svg>
+      <div class="hero-badge-ring-inner">✦</div>
+    </div>
+
+    <!-- Scroll cue -->
+    <div class="hero-scroll-cue" aria-hidden="true">
+      <div class="scroll-cue-line"></div>
+      <span>Scroll</span>
+    </div>
+
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       MARQUEE BRAND STRIP
+  ═══════════════════════════════════════════ -->
+  <div class="marquee-strip" aria-hidden="true">
+    <div class="marquee-inner">
+      <span>VERMILION CLAWS</span>
+      <span class="marquee-dot">✦</span>
+      <span>LUXURY PRESS-ON NAILS</span>
+      <span class="marquee-dot">✦</span>
+      <span>RUČNA IZRADA</span>
+      <span class="marquee-dot">✦</span>
+      <span>GOTSKA ELEGANCIJA</span>
+      <span class="marquee-dot">✦</span>
+      <span>VERMILION CLAWS</span>
+      <span class="marquee-dot">✦</span>
+      <span>LUXURY PRESS-ON NAILS</span>
+      <span class="marquee-dot">✦</span>
+      <span>RUČNA IZRADA</span>
+      <span class="marquee-dot">✦</span>
+      <span>DOMACI BREND</span>
+      <span class="marquee-dot">✦</span>
+      <span>MARIJA NOKTI</span>
+      <span class="marquee-dot">✦</span>
+      <span>LAKA PRESS-ON TEHNOLOGIJA</span>
+      <span class="marquee-dot">✦</span>
+      <span>DETALJNA IZRADA</span>
+      <span class="marquee-dot">✦</span>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       COLLECTIONS / SHOP SECTION
+  ═══════════════════════════════════════════ -->
+  <section class="shop-section" id="kolekcije" aria-labelledby="shop-heading">
+    <div class="container">
+
+      <header class="section-header">
+        <span class="section-tag fade-up">⚜ Kolekcije ⚜</span>
+        <h2 class="section-title fade-up delay-1" id="shop-heading">Arhiva Mračnih Kreacija</h2>
+        <p class="section-subtitle fade-up delay-2">
+          Svaki set je katalogizovan prema nivou detalja i umetničke kompleksnosti. 
+          Izaberi kolekciju koja odražava tvoju tamu.
+        </p>
+
+        <!-- Ornamental divider inspired by logo -->
+        <div class="ornament-divider fade-up delay-3">
+          <div class="ornament-center">✦</div>
+        </div>
+      </header>
+
+      <!-- Tier Filter Tabs -->
+      <div class="tier-tabs" role="tablist" aria-label="Filteri kolekcija">
+        <div class="tier-tab-indicator" aria-hidden="true"></div>
+        <button class="tier-tab active" data-tier="all" role="tab" aria-selected="true">Sve Kreacije</button>
+        <button class="tier-tab" data-tier="minimal" role="tab" aria-selected="false">Nivo I: Minimalna Tama</button>
+        <button class="tier-tab" data-tier="relic" role="tab" aria-selected="false">Nivo II: Gotski Relikvijar</button>
+        <button class="tier-tab" data-tier="couture" role="tab" aria-selected="false">Nivo III: Krvava Rapsodija</button>
+      </div>
+
+      <!-- Immersive collection carousel, rendered from the product archive. -->
+      <div class="collection-carousel" aria-label="Kolekcija noktiju">
+        <button class="carousel-arrow carousel-arrow-prev" type="button" aria-label="Prethodni dizajn">
+          <span aria-hidden="true">←</span>
+        </button>
+        <div class="product-grid carousel-stage" id="product-grid" role="list" aria-label="Proizvodi" tabindex="0"></div>
+        <button class="carousel-arrow carousel-arrow-next" type="button" aria-label="Sledeći dizajn">
+          <span aria-hidden="true">→</span>
+        </button>
+        <div class="carousel-rail" aria-label="Napredak kolekcije">
+          <span class="carousel-current">01</span>
+          <span class="carousel-progress"><span></span></span>
+          <span class="carousel-total">08</span>
+          <span class="carousel-hint">Prevuci za otkrivanje</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       CUSTOM SET BUILDER / KONFIGURATOR
+  ═══════════════════════════════════════════ -->
+  <section class="customizer-section" id="set-po-meri" aria-labelledby="customizer-heading">
+    <div class="container">
+
+      <header class="section-header">
+        <span class="section-tag fade-up">✦ Personalizacija ✦</span>
+        <h2 class="section-title fade-up delay-1" id="customizer-heading">Kreiraj Set po Meri</h2>
+        <p class="section-subtitle fade-up delay-2">
+          Svaka kandža, svaki millimetar — prema tvojoj viziji mračnog savršenstva.
+        </p>
+        <div class="ornament-divider fade-up delay-3"><div class="ornament-center">✦</div></div>
+      </header>
+
+      <div class="customizer-grid">
+
+        <!-- Options -->
+        <div class="customizer-options">
+
+          <div class="option-group fade-up delay-1">
+            <span class="option-group-label">Oblik Nokta</span>
+            <div class="option-pills" role="group" aria-label="Oblik nokta">
+              <button class="option-pill selected" data-group="shape" data-value="Stiletto">Stiletto</button>
+              <button class="option-pill" data-group="shape" data-value="Kovčeg (Coffin)">Kovčeg (Coffin)</button>
+              <button class="option-pill" data-group="shape" data-value="Badem (Almond)">Badem (Almond)</button>
+              <button class="option-pill" data-group="shape" data-value="Četvrtasti (Square)">Četvrtasti</button>
+            </div>
+          </div>
+
+          <div class="option-group fade-up delay-2">
+            <span class="option-group-label">Dužina</span>
+            <div class="option-pills" role="group" aria-label="Dužina nokta">
+              <button class="option-pill" data-group="length" data-value="Kratki (Short)">Kratki</button>
+              <button class="option-pill" data-group="length" data-value="Srednji (Medium)">Srednji</button>
+              <button class="option-pill selected" data-group="length" data-value="Dugi (Long)">Dugi</button>
+              <button class="option-pill" data-group="length" data-value="Kandže (Extreme)">Kandže (Extreme)</button>
+            </div>
+          </div>
+
+          <div class="option-group fade-up delay-3">
+            <span class="option-group-label">Završni Premaz</span>
+            <div class="option-pills" role="group" aria-label="Završni premaz">
+              <button class="option-pill selected" data-group="finish" data-value="Mat somot">Mat Somot</button>
+              <button class="option-pill" data-group="finish" data-value="Visoki sjaj">Visoki Sjaj</button>
+              <button class="option-pill" data-group="finish" data-value="Krvavi hrom">Krvavi Hrom</button>
+              <button class="option-pill" data-group="finish" data-value="Tekstura opsidijana">Tekstura Opsidijana</button>
+            </div>
+          </div>
+
+          <div class="option-group fade-up delay-4">
+            <span class="option-group-label">Veličina Nokatne Ploče</span>
+            <div class="option-pills" role="group" aria-label="Veličina">
+              <button class="option-pill" data-group="size" data-value="XS">XS</button>
+              <button class="option-pill" data-group="size" data-value="S">S</button>
+              <button class="option-pill selected" data-group="size" data-value="M (Standard)">M (Standard)</button>
+              <button class="option-pill" data-group="size" data-value="L">L</button>
+              <button class="option-pill" data-group="size" data-value="Prilagođeno">Prilagođeno</button>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Summary Card -->
+        <div class="customizer-summary slide-right">
+          <div class="summary-card">
+            <p class="summary-card-title">Tvoja Kandža</p>
+
+            <div
+              class="summary-preview-nails"
+              id="custom-nail-preview"
+              data-shape="stiletto"
+              data-length="long"
+              data-finish="mat"
+              data-size="m"
+              aria-hidden="true"
+            >
+              <div class="nail-stage">
+                <figure class="nail-finger" data-finger="0">
+                  <span class="nail-clip">
+                    <img class="nail-photo" src="/images/customizer/nail-0.png" alt="" />
+                    <span class="nail-sheen"></span>
+                    <span class="nail-grain"></span>
+                  </span>
+                </figure>
+                <figure class="nail-finger" data-finger="1">
+                  <span class="nail-clip">
+                    <img class="nail-photo" src="/images/customizer/nail-1.png" alt="" />
+                    <span class="nail-sheen"></span>
+                    <span class="nail-grain"></span>
+                  </span>
+                </figure>
+                <figure class="nail-finger" data-finger="2">
+                  <span class="nail-clip">
+                    <img class="nail-photo" src="/images/customizer/nail-2.png" alt="" />
+                    <span class="nail-sheen"></span>
+                    <span class="nail-grain"></span>
+                  </span>
+                </figure>
+                <figure class="nail-finger" data-finger="3">
+                  <span class="nail-clip">
+                    <img class="nail-photo" src="/images/customizer/nail-3.png" alt="" />
+                    <span class="nail-sheen"></span>
+                    <span class="nail-grain"></span>
+                  </span>
+                </figure>
+                <figure class="nail-finger" data-finger="4">
+                  <span class="nail-clip">
+                    <img class="nail-photo" src="/images/customizer/nail-4.png" alt="" />
+                    <span class="nail-sheen"></span>
+                    <span class="nail-grain"></span>
+                  </span>
+                </figure>
+              </div>
+            </div>
+
+            <div class="summary-specs-list">
+              <div class="summary-spec-row">
+                <span class="spec-name">Oblik</span>
+                <span class="spec-val" id="cust-spec-shape">Stiletto</span>
+              </div>
+              <div class="summary-spec-row">
+                <span class="spec-name">Dužina</span>
+                <span class="spec-val" id="cust-spec-length">Dugi (Long)</span>
+              </div>
+              <div class="summary-spec-row">
+                <span class="spec-name">Završetak</span>
+                <span class="spec-val" id="cust-spec-finish">Mat somot</span>
+              </div>
+              <div class="summary-spec-row">
+                <span class="spec-name">Veličina</span>
+                <span class="spec-val" id="cust-spec-size">M (Standard)</span>
+              </div>
+            </div>
+
+            <div class="summary-price-total">
+              <div class="summary-price-value" id="cust-summary-price">5.900 RSD</div>
+              <div class="summary-price-note">Uključuje 10 noktiju</div>
+            </div>
+
+            <button class="btn-primary" id="add-custom-to-cart">
+              <span>Dodaj Prilagođeni Set u Korpu</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SIZING GUIDE
+  ═══════════════════════════════════════════ -->
+  <section class="sizing-guide" id="vodic-za-velicine" aria-labelledby="sizing-heading">
+    <div class="container">
+      <header class="section-header">
+        <span class="section-tag fade-up">✦ Preciznost ✦</span>
+        <h2 class="section-title fade-up delay-1" id="sizing-heading">Vodič za Veličine Noktiju</h2>
+        <p class="section-subtitle fade-up delay-2">
+          Izmeri nokatnu ploču na najširem mestu (u milimetrima) i odaberi svoju veličinu.<br/>
+          Ukoliko si između veličina, uvek odaberi veću.
+        </p>
+      </header>
+
+      <div class="sizing-table-wrap fade-up delay-3">
+        <table class="sizing-table" aria-label="Tabela veličina noktiju">
+          <thead>
+            <tr>
+              <th>Veličina</th>
+              <th>Palac</th>
+              <th>Kažiprst</th>
+              <th>Srednji</th>
+              <th>Domali</th>
+              <th>Mali</th>
+            </tr>
+          </thead>
+          <tbody id="sizing-table-body">
+            <!-- Populated by JS -->
+          </tbody>
+        </table>
+      </div>
+
+      <p class="sizing-custom-note fade-up delay-4" style="margin-top: 2rem; text-align: center; font-style: italic; color: var(--c-mist); font-size: 0.9rem;">
+        ✦ Za potpuno prilagođene dimenzije, unesi mm za svaki prst u polje za napomenu pri porudžbini. ✦
+      </p>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       KAKO IZMERITI ŠIRINU NOKTA — DEDICATED LUXURY SECTION
+  ═══════════════════════════════════════════ -->
+  <section class="measurement-section" id="kako-izmeriti" aria-labelledby="measurement-heading">
+    <div class="container">
+
+      <header class="section-header">
+        <span class="section-tag fade-up">✦ PRECIZNOST & ANATOMIJA ✦</span>
+        <h2 class="section-title fade-up delay-1" id="measurement-heading">Kako Izmeriti Širinu Nokta?</h2>
+        <p class="section-subtitle fade-up delay-2">
+          Savršeno pristajanje počinje preciznim merenjem. Tri jednostavna koraka uz običnu lepljivu traku i lenjir osiguravaju da vaše kandže pristaju kao salivene.
+        </p>
+        <div class="ornament-divider fade-up delay-3"><div class="ornament-center">⚜</div></div>
+      </header>
+
+      <!-- Main Showcase Container -->
+      <div class="measurement-showcase fade-up delay-3">
+
+        <!-- Prominent Visual Display -->
+        <div class="measurement-visual-frame">
+          <div class="frame-corner top-left" aria-hidden="true">⚜</div>
+          <div class="frame-corner top-right" aria-hidden="true">⚜</div>
+          <div class="frame-corner bottom-left" aria-hidden="true">⚜</div>
+          <div class="frame-corner bottom-right" aria-hidden="true">⚜</div>
+          <div class="measurement-img-wrap">
+            <img
+              src="/images/nail_measurement_guide.jpg"
+              alt="Grafički vodič: Kako izmeriti širinu nokta korak po korak"
+              class="measurement-hero-img"
+              loading="lazy"
+            />
+          </div>
+          <div class="frame-glow-overlay" aria-hidden="true"></div>
+        </div>
+
+        <!-- 3 Step Guided Cards -->
+        <div class="measurement-steps-grid">
+          <div class="measure-step-card">
+            <div class="step-card-header">
+              <span class="step-num-badge">01</span>
+              <div class="step-icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <rect x="3" y="7" width="18" height="10" rx="2"></rect>
+                  <line x1="7" y1="7" x2="7" y2="17"></line>
+                </svg>
+              </div>
+            </div>
+            <h3 class="step-title">Zalepite Traku</h3>
+            <p class="step-desc">
+              Uzmite komadić samolepljive trake (selotejp ili papirna traka) i pažljivo ga zalepite horizontalno preko prirodnog nokta.
+            </p>
+          </div>
+
+          <div class="measure-step-card">
+            <div class="step-card-header">
+              <span class="step-num-badge">02</span>
+              <div class="step-icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
+                  <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+                </svg>
+              </div>
+            </div>
+            <h3 class="step-title">Obeležite Najširi Deo</h3>
+            <p class="step-desc">
+              Dobro pritisnite traku kako bi pratila zakrivljenost nokta. Tankom olovkom ili flomasterom precizno obeležite najširi deo nokta sa obe strane.
+            </p>
+          </div>
+
+          <div class="measure-step-card">
+            <div class="step-card-header">
+              <span class="step-num-badge">03</span>
+              <div class="step-icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <rect x="2" y="6" width="20" height="12" rx="2"></rect>
+                  <line x1="6" y1="6" x2="6" y2="11"></line>
+                  <line x1="10" y1="6" x2="10" y2="14"></line>
+                  <line x1="14" y1="6" x2="14" y2="11"></line>
+                  <line x1="18" y1="6" x2="18" y2="14"></line>
+                </svg>
+              </div>
+            </div>
+            <h3 class="step-title">Izmerite u Milimetrima</h3>
+            <p class="step-desc">
+              Odlepite traku sa nokta, zalepite je ravno na papir i običnim milimetarskim lenjirom očitajte tačno rastojanje u milimetrima (mm).
+            </p>
+          </div>
+        </div>
+
+        <!-- Pro-tip Box -->
+        <div class="measurement-pro-banner">
+          <div class="pro-banner-accent" aria-hidden="true">⚔</div>
+          <div class="pro-banner-text">
+            <h4>Savet Majstora Ateljea Vermilion Claws</h4>
+            <p>
+              Ukoliko je vaša mera između dve standardne veličine (npr. 15.5 mm), uvek preporučujemo <strong>veću veličinu</strong>. Bočne ivice press-on nokta možete u par poteza nežno isturpijati turpijicom iz pakovanja za milimetarski besprekoran komfor.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       RITUAL SECTION
+  ═══════════════════════════════════════════ -->
+  <section class="ritual-section" id="ritual" aria-labelledby="ritual-heading">
+    <div class="container">
+
+      <header class="section-header">
+        <span class="section-tag fade-up">⚔ Rituali ⚔</span>
+        <h2 class="section-title fade-up delay-1" id="ritual-heading">Ritual Primene</h2>
+        <p class="section-subtitle fade-up delay-2">
+          Svaka kandža se nosi sa preciznošću ceremonijalnog oružja. 
+          Pratite ova četiri koraka za nošenje koje traje.
+        </p>
+        <div class="ornament-divider fade-up delay-3"><div class="ornament-center">⚔</div></div>
+      </header>
+
+      <div class="ritual-grid" id="ritual-grid">
+        <!-- Rendered by JS from RITUAL_STEPS data -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       TESTIMONIALS / RECENZIJE
+  ═══════════════════════════════════════════ -->
+  <section class="testimonials-section" id="recenzije" aria-labelledby="testimonials-heading">
+    <div class="container">
+
+      <header class="section-header">
+        <span class="section-tag fade-up">✦ Krvave Pohvale ✦</span>
+        <h2 class="section-title fade-up delay-1" id="testimonials-heading">Šta Kažu Naše Klijentkinje</h2>
+        <p class="section-subtitle fade-up delay-2">
+          Svaki nokat, svaka kandža — potvrđena od strane stvarnih žena koje nose tamu sa ponosom.
+        </p>
+        <div class="ornament-divider fade-up delay-3"><div class="ornament-center">✦</div></div>
+      </header>
+
+      <div class="testimonials-grid" id="testimonials-grid">
+        <!-- Rendered by JS -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       FAQ
+  ═══════════════════════════════════════════ -->
+  <section class="faq-section" id="faq" aria-labelledby="faq-heading">
+    <div class="container">
+
+      <header class="section-header">
+        <span class="section-tag fade-up">✦ Pitanja ✦</span>
+        <h2 class="section-title fade-up delay-1" id="faq-heading">Česta Pitanja</h2>
+        <div class="ornament-divider fade-up delay-2"><div class="ornament-center">✦</div></div>
+      </header>
+
+      <div class="faq-list fade-up delay-2" role="list" aria-label="Najčešća pitanja">
+
+        <div class="faq-item" role="listitem">
+          <button class="faq-question" aria-expanded="false" id="faq-q1" aria-controls="faq-a1">
+            Koliko dugo press-on nokti mogu da se nose?
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="faq-answer" id="faq-a1" role="region" aria-labelledby="faq-q1">
+            <p>Uz pravilnu pripremu i aplikaciju salonskim gelom, naše kandže se nose 3 do 4 nedelje bez odvajanja. Uz silikonske jastučiće za višekratnu upotrebu, nošenje traje 1-3 dana — idealno za posebne događaje.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" role="listitem">
+          <button class="faq-question" aria-expanded="false" id="faq-q2" aria-controls="faq-a2">
+            Da li press-on nokti oštećuju prirodne nokte?
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="faq-answer" id="faq-a2" role="region" aria-labelledby="faq-q2">
+            <p>Ne, uz pravilno uklanjanje — ne skidanje silom. Preporučujemo namakanje u toploj vodi ili korišćenje ulja za nokte da omekšate vezivo. Naši nokti su od visokokvalitetnog ABS materijala koji ne ugrožava zdravlje nokatne ploče.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" role="listitem">
+          <button class="faq-question" aria-expanded="false" id="faq-q3" aria-controls="faq-a3">
+            Kako da znam tačnu veličinu?
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="faq-answer" id="faq-a3" role="region" aria-labelledby="faq-q3">
+            <p>Izmeri nokatnu ploču milimetarskom lenjiricom ili trakom na najširem mestu (bez nokatnih ivica). Pogledi naš vodič za veličine gore na stranici. Možeš i poslati foto noktiju sa kovanicicom za referentnu skalu — odredićemo veličinu za tebe.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" role="listitem">
+          <button class="faq-question" aria-expanded="false" id="faq-q4" aria-controls="faq-a4">
+            Koliko traje isporuka u Srbiji?
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="faq-answer" id="faq-a4" role="region" aria-labelledby="faq-q4">
+            <p>Standardni setovi iz kolekcije isporučuju se za 3-5 radnih dana putem Post Express-a. Setovi po meri (prilagođene dimenzije i dizajn) zahtevaju 7-10 radnih dana izrade + 3-5 dana dostave. Besplatna dostava za porudžbine iznad 5.000 RSD.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" role="listitem">
+          <button class="faq-question" aria-expanded="false" id="faq-q5" aria-controls="faq-a5">
+            Mogu li da naručim set za poseban događaj (venčanje, matura)?
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="faq-answer" id="faq-a5" role="region" aria-labelledby="faq-q5">
+            <p>Apsolutno! Naš Nivo III "Krvava Rapsodija" se specijalizuje upravo za posebne prilike. Kontaktirajte nas najmanje 3 nedelje unapred kako bismo imali dovoljno vremena za personalizovani dizajn i izradu savršenog seta za tvoj ceremonijalni trenutak.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+
+      <div class="footer-inner">
+
+        <!-- Brand -->
+        <div class="footer-brand-col">
+          <div class="footer-social-links footer-direct-socials" aria-label="Društvene mreže">
+            <a href="https://www.tiktok.com/@vermilion.claws" class="social-link" aria-label="TikTok Vermilion Claws" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.7 3.2c.3 1.8 1.4 3 3.2 3.2v2.8a7.2 7.2 0 0 1-3.2-.8v6.2a5.4 5.4 0 1 1-4.7-5.3v2.9a2.5 2.5 0 1 0 1.8 2.4V3.2h2.9Z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/vermilionclaws" class="social-link" aria-label="Instagram Vermilion Claws" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.2" y="3.2" width="17.6" height="17.6" rx="4.5"/><circle cx="12" cy="12" r="4.1"/><circle cx="17.5" cy="6.7" r="1" class="social-icon-dot"/></svg>
+            </a>
+          </div>
+          <p class="footer-brand-tagline">Luksuz Mračne Estetike</p>
+          <p class="footer-brand-desc">
+            Atelje Vermilion Claws izgrađen je na ljubavi prema mračnoj lepoti i preciznoj ručnoj izradi. 
+            Svaki set je potpisano remek-delo nastalo da traje.
+          </p>
+        </div>
+
+        <!-- Shop -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Kolekcije</h4>
+          <ul class="footer-col-links">
+            <li><a href="#kolekcije">Nivo I: Minimalna Tama</a></li>
+            <li><a href="#kolekcije">Nivo II: Gotski Relikvijar</a></li>
+            <li><a href="#kolekcije">Nivo III: Krvava Rapsodija</a></li>
+            <li><a href="#set-po-meri">Set po Meri</a></li>
+          </ul>
+        </div>
+
+        <!-- Info -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Informacije</h4>
+          <ul class="footer-col-links">
+            <li><a href="#vodic-za-velicine">Vodič za Veličine</a></li>
+            <li><a href="#kako-izmeriti">Kako Izmeriti Nokte</a></li>
+            <li><a href="#ritual">Ritual Primene</a></li>
+            <li><a href="#faq">Česta Pitanja</a></li>
+            <li><a href="#recenzije">Recenzije</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Kontakt</h4>
+          <ul class="footer-col-links">
+            <li><a href="mailto:vermilionclaws@gmail.com">vermilionclaws@gmail.com</a></li>
+            <li><a href="https://www.instagram.com/vermilionclaws" target="_blank" rel="noopener noreferrer">DM na Instagramu</a></li>
+            <li><a href="#">Whatsapp Upit</a></li>
+            <li><a href="#">Recenzija / Saradnja</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">
+          &copy; 2026 <strong>Vermilion Claws</strong>. Sva prava zadržana. 
+          Izrađeno sa ♥ u Srbiji.
+        </p>
+        <nav class="footer-legal-links" aria-label="Pravne informacije">
+          <a href="#">Uslovi Korišćenja</a>
+          <a href="#">Politika Privatnosti</a>
+          <a href="#">Povrat i Reklamacije</a>
+        </nav>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>
